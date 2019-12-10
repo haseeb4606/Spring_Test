@@ -1,0 +1,40 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="studentSrv" class="spring.StudentService">
+		<property name="sc" ref="schoolS"></property>
+	</bean>
+
+	<bean id="schoolS" class="spring.SchoolService">
+	
+	</bean>
+	<bean id = "studnt" class = "poso.Student">
+	
+   <property name= "address" value = "Charlottesville">
+   </property>
+   
+   <property name = "firstName" value = "Hasibullah">
+   </property>
+   <property name = "lastName" value = "Haidary">
+   </property>
+   <property name = "email" value = "haseeb.4606@gmail.com"></property>
+   <property name = "gender" value = "Male"></property>
+	</bean>
+	
+	<bean id = "scs"  class = "poso.School">
+	
+	<property name = "schoolName" value = "PVCC"></property>
+	
+	
+	</bean>
+	
+
+</beans>
+
+
+
+
+
